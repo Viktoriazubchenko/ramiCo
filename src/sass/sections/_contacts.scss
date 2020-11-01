@@ -1,0 +1,103 @@
+.contacts {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        margin-top: 70px;
+        justify-content: space-around;
+        align-items: flex-start;
+        @include extra-small-screens {
+            flex-direction: column;
+            align-items: center;
+            margin-top: 0;
+        }
+    }
+    &__form {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        @include extra-small-screens {
+            width: 100%;
+            margin-top: 8%;
+        }
+        label {
+            text-align: left;
+            font-size: 16px;
+            @include adaptive-font (16, 13);
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            text-transform: capitalize;
+            background-color: $transparent-blue;
+            font-size: 16px;
+            @include adaptive-font (16, 13);
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+            text-transform: capitalize;
+            background-color: $transparent-blue;
+            font-size: 16px;
+            @include adaptive-font (16, 13);
+        }
+    }
+    &__data {
+        text-align: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        @include extra-small-screens {
+            width: 100%;
+        }
+    }
+    &__address, &__tel, &__mail {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 3%;
+        justify-content: center;
+        @include extra-small-screens {
+            margin-top: 6%;
+        }
+    }
+    &__icon {
+        margin-right: 20px;
+        color: $nice-blue;
+        font-size: 25px;
+        margin-top: 0;
+        @include adaptive-font (25, 18);
+        &:hover {
+            color: $orange-color;
+        }
+    }
+    &__title {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 16px;
+        @include adaptive-font (16, 13);
+    }
+    &__content {
+        color: $font-color;
+        margin-top: 15px;
+        font-size: 16px;
+        @include adaptive-font (16, 13);
+        &:hover {
+            color: $orange-color;  
+        }   
+    }
+}

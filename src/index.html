@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/484c313396.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="hamburger">
+            <span></span>
+        </div>
+        <div class="header__content">
+            <h1 class="header__logo">RamiCo</h1>
+            
+            <div class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a href="#promo" class="header__link">Home</a></li>
+                        <li class="header__item"><a href="#team" class="header__link">about us</a></li>
+                        <li class="header__item"><a href="#works" class="header__link">works</a></li>
+                        <li class="header__item"><a href="#blog" class="header__link">blog</a></li>
+                        <li class="header__item"><a href="#contacts" class="header__link">contacts</a></li>
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</header>
+<section class="promo" id="promo">
+    <div class="container">
+        <div class="promo__content">
+            <div class="promo__title">
+                <h2>Welcome to RamiCo</h2>
+            </div>
+            <div class="promo__subtitle">
+                CREATIVE SOLUTIONS FOR YOUR BUSINESS
+            </div>
+            <button class="button button_promo">GET STARTED</button>
+        </div>
+    </div>
+</section>
+<section class="team" id="team">
+    <div class="container">
+        <h4 class="title">About us</h4>
+        <div class="separator"></div>
+        <h5 class="subtitle">Our team is ready to help you</h5>
+        <div class="team__gallery">
+            <div class="team__item">
+                <div class="team__img">
+                    <img src="img/worker01.jpg" alt="worker1">
+                    <div class="team__overlay hover-effect" id="cool">
+                        <a href="https://github.com/Viktoriazubchenko" target="_blank">
+                            <i class="team__icon fab fa-github"></i>
+                        </a>
+                        <a href="https://myaccount.google.com/" target="_blank">
+                            <i class="team__icon fab fa-google-plus"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="team__icon fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__subtitle">Ksusha Kurochkina</div>
+                <div class="team__desc">Frontend Developer</div>
+            </div>
+            <div class="team__item">
+                <div class="team__img">
+                    <img src="img/worker02.jpg" alt="worker2">
+                    <div class="team__overlay hover-effect">
+                        <a href="https://github.com/Viktoriazubchenko" target="_blank">
+                            <i class="team__icon fab fa-github"></i>
+                        </a>
+                        <a href="https://myaccount.google.com/" target="_blank">
+                            <i class="team__icon fab fa-google-plus"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="team__icon fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__subtitle">Vanya Ivanov</div>
+                <div class="team__desc">Designer</div>
+            </div>
+            <div class="team__item">
+                <div class="team__img">
+                    <img src="img/worker03.jpg" alt="worker3">
+                    <div class="team__overlay hover-effect">
+                        <a href="https://github.com/Viktoriazubchenko" target="_blank">
+                            <i class="team__icon fab fa-github"></i>
+                        </a>
+                        <a href="https://myaccount.google.com/" target="_blank">
+                            <i class="team__icon fab fa-google-plus"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="team__icon fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__subtitle">Masha Ptichkina</div>
+                <div class="team__desc">Web Developer</div>
+            </div>
+            <div class="team__item">
+                <div class="team__img">
+                    <img src="img/worker04.jpg" alt="worker4">
+                    <div class="team__overlay hover-effect">
+                        <a href="https://github.com/Viktoriazubchenko" target="_blank">
+                            <i class="team__icon fab fa-github"></i>
+                        </a>
+                        <a href="https://myaccount.google.com/" target="_blank">
+                            <i class="team__icon fab fa-google-plus"></i>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="team__icon fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team__subtitle">Klava Buryachkova</div>
+                <div class="team__desc">Creative Director</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="works" id="works">
+    <div class="container">
+        <h4 class="title">OUR WORKS</h4>
+        <div class="separator"></div>
+        <h5 class="subtitle">Our latest works</h5>
+        <ul class="works__tabs">
+            <li class="works__tab works__tab_active"><div>branding</div></li>
+            <li class="works__tab"><div>design</div></li>
+            <li class="works__tab"><div>development</div></li>
+        </ul>
+        <div class="works__content works__content_active">
+            <div class="works-item">
+                <img src="img/banana.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/blue_dark.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/avocado.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/apple.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/lemonio.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/mango.jpg" alt="">
+            </div>
+        </div>
+        <div class="works__content">
+            <div class="works-item">
+                <img src="img/pomidor.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/paprika.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/blue_dark.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/avocado.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/lemonio.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/slices.jpg" alt="">
+            </div>
+        </div>
+        <div class="works__content">
+            <div class="works-item">
+                <img src="img/strawberry.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/kiwi.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/banana.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/blue_dark.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/avocado.jpg" alt="">
+            </div>
+            <div class="works-item">
+                <img src="img/apple.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="blog" id="blog">
+    <div class="container">
+        <h4 class="title">OUR BLOG</h4>
+        <div class="separator"></div>
+        <h5 class="subtitle">Latest posts of our team</h5>
+        <div class="blog-item">
+            <div class="blog-item__img">
+                <img src="img/blog_3.jpg" alt="blog3">
+            </div>
+            <div class="blog-item__content">
+                <div class="blog-item__header">
+                    <h4 class="blog-item__title">LOREM IPSUM DOLOR SIT AMET</h4>
+                    <h5 class="blog-item__subtitle">By <span>Viktoria</span> Zubchenko in <span>Frontend</span></h5>
+                </div>
+                <p class="blog-item__descr">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore
+                    et dolore aliquyam
+                </p>
+                <a href="#" class="blog-item__link">Read more</a>
+            </div>
+
+        </div>
+        <div class="blog-item">
+            <div class="blog-item__img">
+                <img src="img/blog_4.jpg" alt="blog4">
+            </div>
+            <div class="blog-item__content">
+                <div class="blog-item__header">
+                    <h4 class="blog-item__title">LOREM IPSUM DOLOR SIT AMET</h4>
+                    <h5 class="blog-item__subtitle">By <span>Olena</span> Sulimenko in <span>Backend</span></h5>
+                </div>
+                <p class="blog-item__descr">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore
+                    et dolore aliquyam
+                </p>
+                <a href="#" class="blog-item__link">Read more</a>
+            </div>
+
+        </div>
+        <div class="blog-item">
+            <div class="blog-item__img">
+                <img src="img/blog_5.jpg" alt="blog5">
+            </div>
+            <div class="blog-item__content">
+                <div class="blog-item__header">
+                    <h4 class="blog-item__title">LOREM IPSUM DOLOR SIT AMET</h4>
+                    <h5 class="blog-item__subtitle">By <span>Rami</span> Mosleh in <span>Design</span></h5>
+                </div>
+                <p class="blog-item__descr">
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                    teduntlabore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                    dolores et erebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor idunt ut labore
+                    et dolore aliquyam
+                </p>
+                <a href="#" class="blog-item__link">Read more</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="clients" id="clients">
+    <div class="container">
+        <h4 class="title">OUR CLIENTS</h4>
+        <div class="separator"></div>
+        <h5 class="subtitle">We proudly introduce you our happy clients</h5>
+        <div class="clients__logos">
+            <div class="clients__logo">
+                <img src="icons/Bcause.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="icons/Wompify.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="icons/Deorham.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="icons/Malik.png" alt="logo">
+            </div>
+            <div class="clients__logo">
+                <img src="icons/Ratings.png" alt="logo">
+            </div>
+        </div>
+        <div class="clients__reviews">
+            <div class="clients__review">
+                <blockquote class="clients__desc"><p>"Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br>
+                    Temporibus autem quibusdam et aut officiis debitis aut rerum"</p></blockquote>
+                <p class="clients__postscript">Vasilisa Premudraya, "Bcause."</p>
+            </div>
+            <div class="clients__review">
+                <blockquote class="clients__desc"><p>"Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br>
+                    Temporibus autem quibusdam et aut officiis debitis aut rerum"</p></blockquote>
+                <p class="clients__postscript">Zmej Gorynych, "Deorham Networks"</p>
+            </div>
+            <div class="clients__review">
+                <blockquote class="clients__desc"><p>"Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br>
+                    Temporibus autem quibusdam et aut officiis debitis aut rerum"</p></blockquote>
+                <p class="clients__postscript">Malik Petrov, "Malik Media"</p>
+            </div>
+            <div class="clients__review">
+                <blockquote class="clients__desc"><p>"Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br>
+                    Temporibus autem quibusdam et aut officiis debitis aut rerum"</p></blockquote>
+                <p class="clients__postscript">Joe Johanson, "Ratings"</p>
+            </div>
+            <div class="clients__review">
+                <blockquote class="clients__desc"><p>"Hvaing placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.<br>
+                    Temporibus autem quibusdam et aut officiis debitis aut rerum"</p></blockquote>
+                <p class="clients__postscript">Vasilisa Premudraya, "Wompify"</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="contacts" id="contacts">
+    <div class="container">
+        <div class="title">GET IN TOUCH</div>
+        <div class="separator"></div>
+        <div class="subtitle">Lorem ipsum dolor sit amet</div>
+        <div class="contacts__wrapper">
+            <div class="contacts__data">
+                <div class="contacts__address">
+                    <h4 class="contacts__title"><i class="contacts__icon fas fa-map-marker-alt"></i>Address</h4>
+                    <address class="contacts__content">
+                        Koralgatan, 27<br>
+                        Malmo, Sweden
+                    </address>
+                </div>
+                <div class="contacts__tel">
+                    <h4 class="contacts__title"><i class="contacts__icon fas fa-mobile-alt"></i>Hotline (24x7)</h4>
+                    <a class="contacts__content" href="tel:+650052300">+38 050 605 5035</a>
+                    <a class="contacts__content" href="tel:+6588251210">+38 057 36 48 51</a>
+                    <a class="contacts__content" href="tel:+88 01723 511 340">+46 700 230 188</a>
+                </div>
+                <div class="contacts__mail">
+                    <h4 class="contacts__title"><i class="contacts__icon fas fa-paper-plane"></i>E-mail</h4>
+                    <a class="contacts__content" href="mailto:zubchenko@gmail.com">zubchenko@gmail.com</a>
+                    <a class="contacts__content" href="mailto:khalilkode@gmail.com">babyyoda@gmail.com</a>
+                </div>
+            </div>
+            <form action="#" class="contacts__form" novalidate>
+                <label for="name">YOUR NAME</label>
+                <input name="name" required type="text" placeholder="your name..." id="name">
+                <label for="email">YOUR MAIL</label>
+                <input name="email" required type="email" placeholder="your E-mail..." id="email">
+                <label for="message">YOUR MESSAGE</label>
+                <textarea name="textarea" id="message" cols="30" rows="10" placeholder="write something..."></textarea>
+                <button class="button button_submit"> submit </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+                  <div class="footer__logo">
+                      <a href="#">
+                      <img src="icons/twitter.svg" alt="twitter">
+                      </a>
+                  </div>
+                  <div class="footer__logo">
+                      <a href="#">
+                      <img src="icons/facebook.svg" alt="fb">
+                      </a>
+                  </div>
+                  <div class="footer__logo">
+                      <a href="#">
+                      <img src="icons/linkedin.svg" alt="li">
+                      </a>
+                  </div>
+                  <div class="footer__logo">
+                      <a href="#">
+                      <img src="icons/google.svg" alt="google">
+                      </a>
+                  </div>
+              </div>
+              <div class="footer__separator"></div>
+            <div class="footer__copyright">
+                © 2020 RamiCo, by Viktoria Zubchenko
+            </div>
+    </div>
+  </footer>
+
+<a class="pageup" href="#promo">
+    <img src="icons/up.svg" alt="up">
+</a>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

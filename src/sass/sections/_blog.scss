@@ -1,0 +1,91 @@
+.blog {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    &-item {
+        margin-top: 10%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        border-bottom:  $blue-color solid 4px;
+        padding-bottom: 3%;
+        @include medium-large-screens {
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        &__img {
+            width: 40%;
+            @include medium-large-screens {
+                width: 70%;
+            }
+            img {
+                width: 100%; 
+                @include box-shadow;   
+            }
+        }
+        &__content {
+            width: 55%;
+            @include medium-large-screens {
+                width: 100%;
+                text-align: center;
+                margin-top: 2%;
+            }
+        }
+        &__header {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            @include medium-large-screens {
+                align-items: center;
+            }
+        }
+        &__title {
+            color: $orange-color;
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 24px;
+            text-transform: uppercase;
+            padding-top: 10px;
+            padding-bottom: 1%;
+            text-transform: uppercase;
+            @include adaptive-font(20, 15);
+        }
+        &__subtitle {
+            font-size: 17px;
+            font-weight: 400;
+            font-style: italic;
+            line-height: 24px;
+            color: #777777;
+            padding-bottom: 1%;
+            @include adaptive-font(17, 13);
+            span {
+                color: $blue-color;
+            }
+        }
+        &__descr {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            padding-bottom: 2%;
+            @include adaptive-font(14, 10);
+        }
+        &__link {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 24px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            color: $orange-color;
+            transition: 1s;
+            @include adaptive-font(16, 13);
+            &:hover {
+                color: $orange-color;
+                text-decoration: none;
+                @include text-shadow;
+            }
+        }
+    }
+}

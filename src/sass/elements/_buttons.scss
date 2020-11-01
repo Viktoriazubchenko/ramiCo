@@ -1,0 +1,36 @@
+.button {
+    width: 200px;
+    height: 60px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid $basic-white;
+    text-transform: uppercase;
+    color: $basic-white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    transition: all 0.7s;
+    @include box-shadow;
+    @include text-shadow;
+    @include extra-small-screens {
+        font-size: 13px;
+        width: 150px;
+        height: 50px;
+    }
+    &:hover {
+        background-color: $transparent-orange;
+    }
+    &:active {
+        background-color: $transparent-blue;
+    }
+    &_submit {
+        background-color: $orange-color;
+        border: none;
+        &:hover {
+            background-color: $blue-color;
+        }
+        @include extra-small-screens {
+            align-self: flex-end;
+        }
+    }
+}

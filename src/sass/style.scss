@@ -1,0 +1,39 @@
+@import "elements/variables";
+@import "elements/mixins";
+@import "elements/buttons";
+@import "elements/hamburger";
+@import "elements/animations";
+@import "elements/titles";
+@import "elements/subtitles";
+@import "sections/header";
+@import "sections/promo";
+@import "sections/team";
+@import "sections/works";
+@import "sections/blog";
+@import "sections/clients";
+@import "sections/contacts";
+@import "sections/footer";
+@import "sections/pageup";
+
+
+
+* {
+    font-family: 'Montserrat', sans-serifs;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,76 @@
+.header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    z-index: 2;
+    background-color: transparent;
+    color: $basic-white;
+    @include medium-screens {
+        position: absolute;
+    }
+    &__content {
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include medium-screens {
+            display: none;
+        }
+    }
+    &__logo {
+        margin-bottom: 0;
+        font-family: 'Gochi Hand', cursive;
+        color: $basic-white;
+        font-size: 30px;
+        @include medium-screens {
+            font-size: 40px;
+        }
+        @include text-shadow;
+    }
+    &__nav {
+        width: 50%;
+    }
+    &__list {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+    &__link {
+        color: $basic-white;
+        text-transform: uppercase;
+        font-size: 16px;
+        line-height: 1px;
+        @include large-screens {
+            font-size: 11px;
+        }
+        @include medium-screens {
+            font-size: 20px;
+        }
+        @include smallest-screens {
+            font-size: 17px;
+        }
+        @include text-shadow;
+        &:after {
+            content: '';
+                display: block;
+                width: 0;
+                height: 1px;
+                background-color: $basic-white;
+                margin-top: 4px;
+                transition: 1s;
+                @include box-shadow;
+        }
+        &:hover {
+            &:after {
+                content: '';
+                width: 100%;
+            }
+        }
+    }
+}
+.bright {
+    background: $blue-color;
+}
+
